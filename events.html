@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer type="module" src="events.js"></script>
+    <link rel="stylesheet" href="events.css" />
+  </head>
+  <body>
+    <form name="miForm" id="miFormulario" method="get" autocomplete="on">
+      <div id="loging_container"><h1>REGISTER</h1></div>
+      <label for="input">name </label>
+      <input type="text" name="input" id="name" required />
+      <label for="input">email </label>
+      <input
+        type="email"
+        name=""
+        id="email"
+        required
+        placeholder="Real email adress please"
+      />
+      <label for="edad">Edad </label>
+      <input type="number" name="" id="edad" min="10" max="50"  />
+      <label for="Url">Url: </label>
+      <input
+        type="url"
+        name=""
+        id="url"
+        min="10"
+        max="50"
+        pattern="https?://.+?.+?[a-z]?+@+[a-z].+"
+      />
+      <label for="range">Url: </label>
+      <input type="range" name="" id="range" min="10" max="50" step="10" value="10" />
+      <input type="submit" name="" id="btn_submit" value="SEND" />
+      <br />
+    </form>
+    <div id="container"><div class="bd" id="table"></div></div>
+  </body>
+</html>
