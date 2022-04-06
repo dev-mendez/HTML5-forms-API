@@ -1,2 +1,2 @@
 let bd = [];
-export default bd;
+export default basdd;
